@@ -58,7 +58,7 @@ class Character {
     }
   }
   
-  // Companion Class
+  
   class Companion extends Character {
     constructor(name, type) {
       super(name);
@@ -66,7 +66,7 @@ class Character {
     }
   }
   
-  // Adventurer Factory
+  
   class AdventurerFactory {  
     constructor(role) {
       if (!Adventurer.ROLES.includes(role)) {
@@ -95,6 +95,6 @@ class Character {
   robin.companion.companion = new Companion("Frank", "Flea");
   robin.companion.companion.inventory.push("small hat", "sunglasses");
   
-  // Test Duel
+
   const alice = new Adventurer("Alice", "Wizard");
   robin.duel(alice)
